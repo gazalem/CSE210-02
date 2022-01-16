@@ -114,7 +114,7 @@ def choose_players_mark(player1, player2):
     players_name = rd.choice([player1, player2])
     return players_name
 
-def player_move():
+def player_move(player, mark):
     """Write players move on board
     """
     pass
@@ -130,8 +130,6 @@ def main():
     winner = False
     player_X = choose_players_mark(player1, player2)
     print(f"{player_X} will play first with the X mark")
-    while winner:
-        draw_board(board)
 
 
 if __name__ == "__main__":
